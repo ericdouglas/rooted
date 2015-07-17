@@ -11,7 +11,7 @@ function rooted( pathTo ) {
   args = pathTo.split( splitBy );
   args.unshift( __dirname );
 
-  return path.join.apply( this, args );  
+  return require( path.join.apply( this, args ));  
 };
 
 module.exports = rooted;
