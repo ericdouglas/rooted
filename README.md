@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/ericdouglas/rooted.svg)](https://travis-ci.org/ericdouglas/rooted)
 [![Coverage Status](https://coveralls.io/repos/ericdouglas/rooted/badge.svg?branch=master&service=github)](https://coveralls.io/github/ericdouglas/rooted?branch=master)
+[![npm version](https://badge.fury.io/js/rooted.svg)](http://badge.fury.io/js/rooted)
+
+[![NPM](https://nodei.co/npm/rooted.png)](https://nodei.co/npm/rooted/)
 
 Requiring modules/folders/files in the right way
 
