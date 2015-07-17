@@ -1,6 +1,6 @@
 {
   "name": "rooted",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Requiring modules/folders/files based on your root directory",
   "main": "index.js",
   "scripts": {
