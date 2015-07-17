@@ -1,0 +1,33 @@
+{
+  "name": "rooted",
+  "version": "0.0.1",
+  "description": "Requiring modules/folders/files based on your root directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericdouglas/rooted.git"
+  },
+  "keywords": [
+    "root",
+    "require",
+    "rooted",
+    "path",
+    "module",
+    "file"
+  ],
+  "author": "Eric Douglas <eric.douglas.mail@gmail.com> (https://github.com/ericdouglas)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericdouglas/rooted/issues"
+  },
+  "homepage": "https://github.com/ericdouglas/rooted#readme",
+  "devDependencies": {
+    "chai": "^3.1.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}
