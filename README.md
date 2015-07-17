@@ -7,7 +7,9 @@ Requiring modules/folders/files in the right way
 
 ## Installation
 
-  npm i rooted --save
+```
+npm i rooted --save
+```
 
 ## Usage
 
@@ -20,7 +22,9 @@ var myFile = rooted( 'path/to/file' );
 
 ## Tests
 
-  make test
+```
+make test
+```
 
 ## Release History
 
