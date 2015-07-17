@@ -11,7 +11,10 @@ function rooted( pathTo ) {
   args = pathTo.split( splitBy );
   args.unshift( __dirname );
 
-  return require( path.join.apply( this, args ));  
+  var actualPath = path.join.apply( this, args );
+  actualPath = actualPath.replace( '/node_modules/rooted', '' );
+
+  return require( actualPath );  
 };
 
 module.exports = rooted;
