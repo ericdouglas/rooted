@@ -28,7 +28,3 @@ var myFile = rooted( 'path/to/file' );
 ```
 make test
 ```
-
-## Release History
-
-* 0.1.0 Initial Release
