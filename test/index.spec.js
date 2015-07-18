@@ -2,7 +2,7 @@ var expect  = require( 'chai' ).expect;
 var path    = require( 'path' );
 var rooted  = require( '../' );
 var example = rooted( 'example' );
-var folder  = rooted( 'example/folder' );
+var folder  = rooted( 'example\\folder' );
 
 describe( '#rooted', function() {
 
