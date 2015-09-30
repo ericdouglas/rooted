@@ -1,10 +1,10 @@
 {
   "name": "rooted",
-  "version": "1.0.1",
-  "description": "Requiring modules/folders/files based on your root directory",
+  "version": "2.0.0",
+  "description": "Requiring or import modules/folders/files based on your root directory",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
