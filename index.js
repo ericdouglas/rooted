@@ -1,6 +1,6 @@
 var path = require( 'path' );
 
-function rooted( pathTo ) {
+function rooted( pathTo, onlyString ) {
   var splitBy = '/';
   var args;
 
@@ -8,13 +8,14 @@ function rooted( pathTo ) {
     pathTo = pathTo.replace( /\\/g, splitBy );
   }
 
-  args = pathTo.split( splitBy );
-  args.unshift( __dirname );
-
-  var actualPath = path.join.apply( this, args );
+  var actualPath = __dirname + '/' + pathTo;
   actualPath = actualPath.replace( '/node_modules/rooted', '' );
 
-  return require( actualPath );  
+  if (onlyString) {
+    return actualPath;
+  } else {
+    return require( actualPath );  
+  }
 };
 
 module.exports = rooted;
