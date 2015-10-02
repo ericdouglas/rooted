@@ -17,10 +17,25 @@ npm i rooted --save
 ## Usage
 
 ```js
-var rooted = require( 'rooted' );
+////// bad
+var data    = require('../../../../data.json');
+var helpers = require('../../../helpers');
 
+///// good
 // will build the path starting from the root directory of your application
-var myFile = rooted( 'path/to/file' ); 
+// and require the respective file/folder/module
+var rooted  = require('rooted');
+var data    = rooted('data.json');
+var helpers = rooted('helpers');
+```
+
+You can also get string representing the absolute path of the file/folder, passing `true` as the second argument.
+
+```js
+var rooted  = require('rooted');
+var data    = rooted('data.json', true);
+
+console.log(typeof data); // "string"
 ```
 
 ## Tests
@@ -28,3 +43,7 @@ var myFile = rooted( 'path/to/file' );
 ```
 make test
 ```
+
+## License
+
+[MIT License](http://ericdouglas.mit-license.org/) © Eric Douglas
